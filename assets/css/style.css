@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"); /* url de fonts.google primero se selecciona y se copia link */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); /* url de fonts.google primero se selecciona y se copia link */
+
+/* ESTILO PARA TODA LA PÁGINA */
+* {
+  margin: 0px; /* margen */
+  padding: 0px; /* relleno */
+}
+/* ESTILO PARA EL CONTAINER VA LAS DOS COLUMNAS */
+.container {
+  display: flex; /* alinear contenido uno  al lado de otro */
+}
+
+/* ESTILO PARA EL MENÚ DONDE VAN TODOS LOS CONTACTOS */
+.contactos {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  flex-direction: column; /* dirección column */
+  padding: 0px; /* sin relleno */
+  flex-basis: 20%; /* espacio de cada contacto */
+  min-height: 100vh; /* alto mínimo posible (min-height) de 100% en función del viewport vertical (100vh) */
+  width: 9em; /* ancho 1em mide 16px*/
+}
+
+/* ESTILO PARA CONTACTO 1 INCLUYE IMAGEN DATOS E ICON */
+.contacto1 {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  justify-content: space-between; /* alinear con espacios entre ellos por defecto eje horizontal principal */
+  align-items: center; /* alinear centrado items por defecto eje vertical secundario transversal  */
+  padding-top: 15px; /* relleno ariba */
+  padding-left: 20px; /* relleno izquierdo */
+  padding-right: 20px; /* relleno derecho */
+  padding-bottom: 15px; /* relleno abajo */
+  border: solid 1px; /* borde */
+  border-color: #bec1bb; /* color del borde */
+}
+
+/* ESTILO USUARIO 1 LA IMAGEN Y 2 PARRAFOS*/
+.usuario1 {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  justify-content: center; /* alinear contenido al centro */
+  align-items: center; /* alinear centrado items por defecto eje vertical secundario transversal  */
+  margin-left: 10px; /* margen izquierda */
+}
+
+/* ESTILO CLASE DATOS INCLUYE LOS P*/
+.datos {
+  padding-left: 10px; /* relleno izquierda */
+}
+
+/* ESTILO PARA LA IMAGEN DE CONTACTO 1 */
+.contacto1 img {
+  width: 40px; /* ancho */
+  border-radius: 55%; /* borde circular a la foto */
+  border: 2px solid; /* borde con px */
+  border-color: #bec1bb; /* color del borde */
+}
+
+/* ESTILO PARA EL NOMBRE DE CONTACTO 1 */
+.name {
+  font-family: "Roboto", sans-serif; /* de fonts */
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px; /* tamaño de la letra */
+  color: #5f5f5f; /* color de la letra */
+}
+
+/* ESTILO PARA EL ESTATUS DEL CONTACTO 1 */
+.status {
+  color: gray; /* color de la letra */
+  font-family: "Open Sans", sans-serif; /* de fonts */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 10px; /* tamaño de la letra */
+  padding-top: 2px; /* relleno arriba */
+}
+
+/* ESTLO DONDE VAN LOS DOS ICON */
+.icon1 {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  justify-content: flex-end; /* alinear contenido al final */
+}
+
+/* ESTILO PARA LOS DOS ICON */
+.iconc1 {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  justify-content: space-between; /* alinear contenido espacio entre ellos */
+  color: gray; /* color de icon */
+}
+
+/* ESTILO PARA ICON */
+.iconc1 i {
+  padding: 7px; /* relleno icon */
+}
+
+/* ESTILO PARA DIV DEL BOTÓN */
+.boton {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  justify-content: center; /* alineación horizontal central */
+  align-items: center; /* alineación vertical central */
+  border: solid 1px; /* borde */
+  border-color: #bec1bb; /* color del borde */
+  height: 138px; /* alto */
+}
+
+.chat {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  justify-content: center; /* alineación contenido centro */
+  align-items: center; /* alineación items al centro */
+}
+
+/* ESTILO PARA EL BOTÓN */
+.btn1 {
+  background-color: #a491d2; /* color de fondo */
+  border: none; /* sin borde */
+  color: white; /* color de la letra */
+  font-family: "Open Sans", sans-serif; /* de fonts */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 14px; /* tamaño de letra */
+  margin: 20px; /* margen */
+  width: 90%; /* ancho */
+  height: 44px; /* alto */
+  padding-left: 60px; /* relleno izquierda */
+  padding-right: 60px; /* relleno derecha */
+}
+
+/*  ESTILO BOTÓN HOVER */
+.btn1:hover {
+  background-color: #cdc3e6;
+}
+
+/* ESTILO BOTÓN CLIC */
+.btn1:focus {
+  background-color: #bec1bb;
+}
+
+/* ESTILO NUEVOS CONTACTOS */
+.ncontacto {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  justify-content: flex-start; /* alineación contenido al inicio */
+  align-items: center; /* alineación items al centro */
+  padding-top: 15px; /* relleno arriba */
+  padding-left: 20px; /* relleno izquierdo */
+  padding-right: 20px; /* relleno derecho */
+  padding-bottom: 15px; /* relleno abajo */
+  border: solid 1px; /* borde */
+  border-color: #bec1bb; /* color del borde */
+}
+
+/* ESTILO NUEVOS USUARIOS  IMAGEN Y 2 P */
+.usuario {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  justify-content: space-between; /* alineación contenido espacio entre ellos */
+  align-items: center; /* alineación items al centro */
+  margin-left: 10px; /* margen izquierdo */
+}
+
+/* ESTILO A CLASE DATOS2 INCLUYE LOS 2 P*/
+.datos2 {
+  padding-left: 18px; /* relleno izquierdo */
+}
+
+/* ESTILO IMAGEN NUEVOS USUARIOS */
+.ncontacto img {
+  width: 50px; /* ancho */
+  border-radius: 55%; /* borde circular foto */
+  border: 2px solid; /* borde con px */
+  border-color: #bec1bb; /* color del borde */
+}
+
+/* ESTILO NUEVOS NOMBRES */
+.names {
+  font-family: "Roboto", sans-serif; /* de fonts */
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px; /* tamaño de letra */
+  color: #5f5f5f; /* color de letra */
+}
+
+/* ESTILO DEL ÚLTIMO MENSAJE */
+.mensaje {
+  font-family: "Roboto", sans-serif; /* de fonts */
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px; /* tamaño de letra */
+  color: #8b8989; /* color de la letra */
+  padding-top: 2px; /* relleno arriba */
+}
+
+/* ESTILO PARA LA COLUMNA 2 */
+.columna2 {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  justify-content: center; /* alinear contenido al centro */
+  flex-direction: column; /* dirección en columna */
+  background-color: #faf9f9; /* color de fondo */
+  flex: 45%;
+}
+
+/* ESTILO ELEMENTOS DE LA COL 2 */
+.elcol2 {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  justify-content: center; /* alinear contenido al centro */
+  align-items: center; /* alinear items al centro */
+  flex-direction: column; /* dirección en columna */
+}
+
+/* ESTILO IMAGEN COL 2 */
+.columna2 img {
+  width: 25%; /* ancho */
+  border-radius: 5%; /* borde circular foto */
+}
+
+/* ESTILO TEXTOS COL 2 */
+.tcol2 {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  flex-direction: column; /* dirección en columna */
+  justify-content: center; /* alinear contendio al centro */
+  align-items: center; /* alinear items al centro */
+  text-align: center; /* textos centrados */
+  padding-top: 20px; /* relleno arriba */
+}
+
+/* ESTILO h1 */
+.tcol2 h1 {
+  font-size: 45px; /* tamaño de la letra */
+  padding-top: 10px; /* relleno arriba */
+  font-family: "Open Sans", sans-serif; /* de fonts */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* ESTILO p */
+.tcol2 p {
+  font-size: 16px; /* tamaño de la letra */
+  padding-top: 7px; /* relleno arriba */
+  width: 55%; /* ancho */
+  font-family: "Open Sans", sans-serif; /* de fonts */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* resaltar palabras */
+.bold {
+  font-family: "Roboto", sans-serif; /* de fonts */
+  font-weight: 700;
+  font-style: normal;
+}
